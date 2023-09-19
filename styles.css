@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+    font-weight: 400;
+    color: #5D5D7D;
+}
+
+.princ {
+    height: 100vh;
+    width: 100vw;
+}
+
+.section-left { /*aqui tem os textos*/
+    display: inline-block;
+    width: 60%;
+    margin-top: 25%;
+    padding-left: 136px;
+}
+
+.section-right { /*aqui tem as imagens*/
+    display: inline-block;
+    background-color: rgba(93,93,125,0.16);
+    width: 40%;
+    height: 901px;
+    position: absolute;
+}
+
+img {
+    position:relative;
+    top: 25%;
+    right: 130px;
+}
+
+h1 {
+    width: 368px;
+    font-size: 70px;
+    line-height: 80px;
+}
+
+p{
+    width: 540px;
+    opacity: 0.6;
+    font-size: 28px;
+    line-height: 48px;
+    margin: 15px 0;
+}
+
+button {
+    width: 269px;
+    height: 62px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+    background: #9499EA;;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    filter: drop-shadow(0px 10px 24px rgba(148, 153, 234, 0.10));
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.5;
+}
+
+.menu-item {
+    margin-right: 51px;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    opacity: 0.4;
+}
+
+.menu-item:active {
+    opacity: 0.8;
+}
+
+.menu-item:nth-child(2) {
+    opacity: 0.4;
+}
+
+header {
+    color: #5D5D7D;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 24px 0 0 57px;
+}
+
+@media screen and (max-width: 900px) {
+    .section-left {
+        width: 100%;
+        height: 50%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .section-right {
+        display: block; /*cada um no seu lugar*/
+        height: auto; /*automatico*/
+        width: 100%;
+        position: static;
+        padding: 40px;
+    }
+
+    img {
+        position: static;
+        max-width: 90%;
+    }
+
+    header {
+        display: none;
+    }
+
+    h1 {
+        width: 268px;
+        text-align: center;
+        font-size: 36px;
+        line-height: 52px;
+        margin: 58px 53px 0 54px;
+    }
+
+    p {
+        width: auto;
+        text-align: center;
+        font-size: 14px;
+        line-height: 24px;
+        margin: 15px 40px; /*15 para baixo e para cima / 40 para esquerda e direita*/
+    }
+
+    button {
+        width: 269px;
+        height: 62px;
+        margin: 0 auto; /*aqui vai alinhar o botão sempre no centro mas para isso funcionar, tem que ser display block*/
+        display: block;
+    }
+}
